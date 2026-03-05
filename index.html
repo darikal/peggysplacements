@@ -1,249 +1,210 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peggy's Placements | Senior Living Advisor</title>
+<link rel="stylesheet" href="styles.css">
+</head>
 
-body{
-background:#f6f9ff;
-color:#1f2937;
-line-height:1.7;
-font-size:19px;
-}
+<body>
 
+<!-- NAVBAR -->
 
-/* NAVBAR */
+<nav>
+<div class="nav-container">
 
-nav{
-position:fixed;
-top:0;
-width:100%;
-background:white;
-box-shadow:0 3px 12px rgba(0,0,0,.08);
-z-index:1000;
-}
+<div class="logo">
+Peggy's Placements
+</div>
 
-.nav-container{
-max-width:1200px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 20px;
-}
+<div class="nav-links">
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</div>
 
-.logo{
-font-size:22px;
-font-weight:bold;
-color:#1e40af;
-}
-
-.nav-links a{
-margin-left:25px;
-text-decoration:none;
-color:#374151;
-font-weight:600;
-}
-
-.nav-links a:hover{
-color:#2563eb;
-}
+</div>
+</nav>
 
 
-/* HERO */
+<!-- HERO -->
 
-.hero{
-height:95vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
+<header class="hero">
 
-background:
-linear-gradient(rgba(20,60,140,.6),rgba(20,60,140,.6)),
-url("hero-butterfly.png");
+<div class="hero-content">
 
-background-size:contain;
-background-repeat:no-repeat;
-background-position:center;
+<h1>Peggy's Placements</h1>
 
-color:white;
-padding:20px;
-margin-top:70px;
-}
+<h2>Never a Fee for Our Services</h2>
 
-.hero-content{
-max-width:850px;
-}
+<p>
+Specializing with over <strong>17+ years in the Senior Care industry</strong>
+locally here in the Tampa Bay area.
+</p>
 
-.hero h1{
-font-size:64px;
-margin-bottom:10px;
-}
+<p>
+Each community has been <strong>hand selected with care</strong>
+being our number one priority.
+</p>
 
-.hero h2{
-font-size:28px;
-font-weight:300;
-margin-bottom:20px;
-}
+<p class="highlight">
+The right care. The right environment. The right fit —
+<strong>at absolutely no cost to you.</strong>
+</p>
 
-.hero p{
-margin-bottom:15px;
-}
+<div class="cta-buttons">
 
-.highlight{
-font-weight:bold;
-font-size:20px;
-}
+<a class="btn" href="#contact">Speak With an Advisor</a>
+
+<a class="btn outline" href="#services">Learn More</a>
+
+</div>
+
+</div>
+
+</header>
+
+<div class="divider"></div>
 
 
-/* BUTTONS */
+<!-- ABOUT -->
 
-.cta-buttons{
-margin-top:25px;
-}
+<section class="section-light" id="about">
 
-.btn{
-display:inline-block;
-padding:16px 32px;
-background:#2563eb;
-color:white;
-text-decoration:none;
-border-radius:6px;
-margin:10px;
-font-weight:bold;
-}
+<h2>Compassionate Guidance for Every Family</h2>
 
-.btn:hover{
-background:#1d4ed8;
-}
+<p>
+Choosing the right senior living community can feel overwhelming.
+Peggy's Placements helps families navigate every step of the process
+with experience, compassion, and trusted local knowledge.
+</p>
 
-.btn.outline{
-background:transparent;
-border:2px solid white;
-}
+<p>
+With over 17 years of experience working with senior living communities
+throughout the Tampa Bay area, we help families find environments where
+their loved ones can feel safe, supported, and truly at home.
+</p>
 
-.btn.large{
-font-size:20px;
-margin-top:25px;
-}
+</section>
+
+<div class="divider"></div>
 
 
-/* DIVIDER */
+<!-- SERVICES -->
 
-.divider{
-height:6px;
-background:linear-gradient(
-to right,
-transparent,
-#2563eb,
-#2563eb,
-transparent
-);
-width:100%;
-}
+<section class="section-blue" id="services">
 
+<h2>Why Families Choose Peggy's Placements</h2>
 
-/* SECTIONS */
+<div class="features">
 
-section{
-max-width:1100px;
-margin:auto;
-padding:80px 20px;
-text-align:center;
-}
+<div class="feature">
 
-.section-light{
-background:#f6f9ff;
-}
+<h3>17+ Years Experience</h3>
 
-.section-blue{
-background:#eef4ff;
-}
+<p>
+Deep knowledge of senior living communities throughout the Tampa Bay area.
+</p>
 
-section h2{
-font-size:36px;
-margin-bottom:25px;
-color:#1e40af;
-}
+</div>
 
+<div class="feature">
 
-/* FEATURE GRID */
+<h3>Hand Selected Communities</h3>
 
-.features{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:30px;
-margin-top:40px;
-}
+<p>
+Each community is carefully vetted to ensure high quality care.
+</p>
 
-.feature{
-background:white;
-padding:35px;
-border-radius:10px;
-box-shadow:0 10px 20px rgba(0,0,0,.08);
-}
+</div>
 
-.feature h3{
-color:#2563eb;
-margin-bottom:10px;
-}
+<div class="feature">
 
-.highlight-card{
-border:3px solid #2563eb;
-}
+<h3>Personalized Guidance</h3>
+
+<p>
+We match seniors with communities based on care needs,
+lifestyle preferences, and budget.
+</p>
+
+</div>
+
+<div class="feature highlight-card">
+
+<h3>No Cost to Families</h3>
+
+<p>
+Our placement services are completely free for seniors
+and their families.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
 
 
-/* FINANCIAL ASSISTANCE */
+<!-- FINANCIAL ASSISTANCE -->
 
-.assistance{
-list-style:none;
-margin-top:20px;
-font-size:20px;
-}
+<section class="section-light">
 
-.assistance li{
-margin:15px 0;
-}
+<h2>Financial Assistance Options</h2>
 
+<ul class="assistance">
 
-/* CONTACT */
+<li>Financial assistance for <strong>War Era Veterans</strong></li>
 
-.contact-box{
-background:white;
-padding:40px;
-border-radius:10px;
-box-shadow:0 10px 20px rgba(0,0,0,.08);
-margin-top:35px;
-}
+<li>Support for <strong>Surviving Spouses of Veterans</strong></li>
 
-.areas{
-font-size:20px;
-margin-bottom:20px;
-}
+<li><strong>Medicaid funding</strong> for those who qualify</li>
+
+</ul>
+
+</section>
+
+<div class="divider"></div>
 
 
-/* FOOTER */
+<!-- CONTACT -->
 
-footer{
-background:#1e40af;
-color:white;
-text-align:center;
-padding:35px;
-}
+<section class="section-blue" id="contact">
+
+<h2>Proudly Serving the Tampa Bay Area</h2>
+
+<p class="areas">
+Tampa • Clearwater • St. Petersburg • Largo • Palm Harbor • Surrounding Communities
+</p>
+
+<div class="contact-box">
+
+<h3>Let Us Help You Find the Right Care</h3>
+
+<p>
+If you're searching for senior living options,
+Peggy's Placements is here to help guide you.
+</p>
+
+<p class="highlight">
+Our services are always completely free.
+</p>
+
+<a class="btn large" href="#">Contact Peggy's Placements</a>
+
+</div>
+
+</section>
 
 
-/* MOBILE */
+<footer>
 
-@media(max-width:768px){
+<p>© Peggy's Placements | Senior Living Advisor</p>
 
-.hero h1{
-font-size:42px;
-}
+</footer>
 
-.hero h2{
-font-size:22px;
-}
-
-}
+</body>
+</html>
