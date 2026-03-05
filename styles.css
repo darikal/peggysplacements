@@ -1,32 +1,84 @@
-
-body{
+*{
 margin:0;
-font-family:Arial,Helvetica,sans-serif;
-background:#f4f8ff;
-color:#1f2937;
-text-align:center;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
 
+body{
+background:#f6f9ff;
+color:#1f2937;
+line-height:1.7;
+font-size:19px;
+}
+
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+.nav-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 20px;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#1e40af;
+}
+
+.nav-links a{
+margin-left:25px;
+text-decoration:none;
+color:#374151;
+font-weight:600;
+}
+
+.nav-links a:hover{
+color:#2563eb;
+}
+
+
+/* HERO */
+
 .hero{
-height:90vh;
+height:95vh;
 display:flex;
 align-items:center;
 justify-content:center;
+text-align:center;
+
 background:
-linear-gradient(rgba(20,60,140,.65),rgba(20,60,140,.65)),
-url('hero-butterfly.png');
-background-size:cover;
+linear-gradient(rgba(20,60,140,.6),rgba(20,60,140,.6)),
+url("hero-butterfly.png");
+
+background-size:contain;
+background-repeat:no-repeat;
 background-position:center;
+
 color:white;
-padding:40px;
+padding:20px;
+margin-top:70px;
 }
 
 .hero-content{
-max-width:800px;
+max-width:850px;
 }
 
 .hero h1{
-font-size:60px;
+font-size:64px;
 margin-bottom:10px;
 }
 
@@ -37,24 +89,25 @@ margin-bottom:20px;
 }
 
 .hero p{
-font-size:18px;
-line-height:1.6;
+margin-bottom:15px;
 }
 
-.emphasis{
-font-size:20px;
+.highlight{
 font-weight:bold;
-margin-top:20px;
+font-size:20px;
 }
 
-.hero-buttons{
-margin-top:30px;
+
+/* BUTTONS */
+
+.cta-buttons{
+margin-top:25px;
 }
 
 .btn{
 display:inline-block;
-padding:14px 28px;
-background:#2b6cff;
+padding:16px 32px;
+background:#2563eb;
 color:white;
 text-decoration:none;
 border-radius:6px;
@@ -72,53 +125,125 @@ border:2px solid white;
 }
 
 .btn.large{
-margin-top:30px;
-font-size:18px;
+font-size:20px;
+margin-top:25px;
 }
+
+
+/* DIVIDER */
+
+.divider{
+height:6px;
+background:linear-gradient(
+to right,
+transparent,
+#2563eb,
+#2563eb,
+transparent
+);
+width:100%;
+}
+
+
+/* SECTIONS */
 
 section{
-padding:70px 10%;
+max-width:1100px;
+margin:auto;
+padding:80px 20px;
+text-align:center;
 }
 
-h2{
-font-size:34px;
-color:#0f3ea8;
-margin-bottom:20px;
+.section-light{
+background:#f6f9ff;
 }
 
-.grid{
+.section-blue{
+background:#eef4ff;
+}
+
+section h2{
+font-size:36px;
+margin-bottom:25px;
+color:#1e40af;
+}
+
+
+/* FEATURE GRID */
+
+.features{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:30px;
 margin-top:40px;
 }
 
-.card{
+.feature{
 background:white;
-padding:30px;
-border-radius:8px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
+padding:35px;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
 }
 
-.card.highlight{
-border:3px solid #2b6cff;
+.feature h3{
+color:#2563eb;
+margin-bottom:10px;
 }
 
-ul{
+.highlight-card{
+border:3px solid #2563eb;
+}
+
+
+/* FINANCIAL ASSISTANCE */
+
+.assistance{
 list-style:none;
-padding:0;
-font-size:18px;
-line-height:2;
+margin-top:20px;
+font-size:20px;
 }
 
-.divider{
-height:6px;
-background:#2b6cff;
-width:100%;
+.assistance li{
+margin:15px 0;
 }
+
+
+/* CONTACT */
+
+.contact-box{
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+margin-top:35px;
+}
+
+.areas{
+font-size:20px;
+margin-bottom:20px;
+}
+
+
+/* FOOTER */
 
 footer{
-background:#0f3ea8;
+background:#1e40af;
 color:white;
-padding:30px;
+text-align:center;
+padding:35px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+}
+
+.hero h2{
+font-size:22px;
+}
+
 }
